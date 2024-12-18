@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(/Image/br\ image.jpg) no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: yellow;
+    color: black;
+}
+.about-content { background-color:rgba(225, 225, 225, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 1300px;
+    z-index: 100;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.about-content img {gap: 10px;
+   width: 30%;
+   height: auto;
+   border-radius: 5px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.about-content img:hover    {
+    transform: scale(1.05);
+}
+
+.about h2 {text-align: center;
+color: red;
+font-size: xx-large;
+}
+
+.about p {text-align: center;
+line-height: 1.5;
+font-size: larger;
+color: black;
+}
+
+
+
+@media (max-width: 600px) {
+    .about-content {
+        padding: 20px;
+        flex-direction: column; 
+    }
+
+    .about-content img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about h2 {
+        font-size: large; 
+    }
+
+    .about p {
+        font-size: medium; 
+    }
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        padding: 30px;
+    }
+
+    .about-content img {
+        width: 50%; 
+    }
+
+    .about h2 {
+        font-size: x-large; 
+    }
+
+    .about p {
+        font-size: large; 
+    }
+}
+
+
+@media (min-width: 901px) {
+    .about-content {
+        flex-direction: row; 
+    }
+
+    .about-content img {
+        width: 30%;
+    }
+
+    .about h2 {
+        font-size: xx-large; 
+    }
+
+    .about p {
+        font-size: larger; 
+    }
+}
