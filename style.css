@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url(/Image/br\ image.jpg) no-repeat center center/cover;
     font-family: Arial, sans-serif;
     color: black;
     position: relative;
@@ -125,7 +124,10 @@ body {
 .btn-login:hover {
     background-color: red;
 }
-
+.background img{
+     background-repeat: no-repeat;
+     background-size: cover;
+}
 
 @media (max-width: 600px) {
     .navbar {
